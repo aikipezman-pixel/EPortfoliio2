@@ -218,7 +218,7 @@ NAVIGATION
     overflow: hidden;
 }
 
-.project__wrapper:hover .project-description {
+.project__wrapper:hover .project__description {
     opacity: 1;
     transform: translateY(-50%);
 }
