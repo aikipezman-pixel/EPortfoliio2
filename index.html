@@ -38,7 +38,7 @@
                     link__hover-effect
                     link__hover-effect--black
                     ">Projects</a>
-                </li> <li class="nav__link">
+                </li> <li class="nav__link" onclick="toggleModal()">
                     <a href="" class="
                     nav__link--anchor
                     link__hover-effect
@@ -60,7 +60,7 @@
                 <h1 class="title title--secondary">I'm Jeff</h1>
                 <p class="header__para">I'm a <b class="orange">Creative Technologist</b> with a background in the arts who helps artists, educators, and cultural organizations build digital homes that actually reflect the depth of their work.
                 <br>
-                Here's a bit more <b class="orange">about me</b>: 
+                Here's a bit more <b class="orange" onclick="toggleModal()">about me</b>: 
                 </p>
                 <div class="social__list">
                     <a href="linkedin.com/in/jeff-hodges-17735a2b" target="_blank" class="social__link click">
@@ -72,9 +72,11 @@
                     <a href="assets/HodgesCreativeTechnologist.pdf" target="_blank" class="social__link click">
                         <i class="fa-solid fa-file-pdf"></i>
                     </a>
+                    </div>
+                </header>
                 <div class="modal">
                     <div class="modal__half modal__about">
-                        <h3 class="modal__title modal__title--about">Here's a Bit About Me</h3>
+                        <h3 class="modal__title modal__title--about">Here's a Bit <b class="orange" onclick="toggleModal()">about me</b>:</h3>
                         <h4 class="modal__sub-title modal__sub-title--about">Creative Technologist</h4>
                         <p class="modal__para">
                           I’m a <b class="orange">creative technologist </b>with a background in music education, ethnomusicology, and more than two decades of building experiences around communication, collaboration, and audience. 
@@ -99,7 +101,7 @@
                     </div>
                 </div>
                  <div class="modal__half modal__contact">
-                    <i class="fas fa-times modal__exit click"></i>
+                    <i class="fas fa-times modal__exit" onclick="toggleModal()"></i>
 
                     <h3 class="modal__title modal__title--contact">
                         Let's Have a Chat
@@ -136,7 +138,7 @@
                 </div>
                          
                 </div>
-        </header>
+    
         <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
