@@ -24,9 +24,14 @@ function contact(event) {
             "The Email service is temporarily unavailable. Please contact me directly at aikipezman@gmail.com"
         )
     });
+}
 
-setTimeout(() => {
-    ;
-console.log('It Worked 1');
-}, 1000);
+let isModalOpen = false;
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove("modal--open");
+    }
+    isModalOpen = true;
+    document.body.classList += " modal--open";
 }
